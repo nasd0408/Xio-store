@@ -2,9 +2,9 @@
   <v-container>
     <v-row>
       <v-col>
-        <v-card rounded="xl" height="500px" width="500px">
-          <img :src="src" alt="Producto1" height="100%"  width="100%" />
-        </v-card>
+       <v-img :src="src" contain width="500px" class="rounded-xl">
+
+       </v-img>
       </v-col>
 
       <v-col>

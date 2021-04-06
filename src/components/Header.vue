@@ -4,7 +4,7 @@
       <v-col cols="12" sm="4">
         <v-card rounded="xl" height="250px" color="#f2f2f2" >
           <v-card-title>
-            Bienvenido a Xio Store 
+            Bienvenido a Ring'OStore 
           </v-card-title>
           <v-card-subtitle>
             La tienda malinda
@@ -25,11 +25,11 @@
           <v-card-text>Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Facere voluptatibus iste doloremque asperiores modi molestiae maiores, 
             deleniti et error necessitatibus.</v-card-text>
-            <v-btn class="mx-3 my-3" color="#fe793d" dark>
+            <v-btn class="mx-3 my-3" color="#fe793d" dark href="https://wa.me/584145202186" target="__blank">
               WhatsApp
               <v-icon>mdi-whatsapp</v-icon>
             </v-btn>
-            <v-btn class="mx-3 my-4" color="#fb4c1f" dark>
+            <v-btn class="mx-3 my-4" color="#fb4c1f" dark href="https://instagram.com" target="__blanck">
               Instagram
               <v-icon>mdi-instagram</v-icon>
             </v-btn>

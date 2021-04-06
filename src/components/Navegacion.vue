@@ -16,12 +16,12 @@
           <v-icon>mdi-home</v-icon>
         </v-tab>
 
-        <v-tab to="/about">
+        <v-tab to="/catalogo">
           Catalogo
           <v-icon>mdi-shopping</v-icon>
         </v-tab>
 
-        <v-tab to="/ubucacion">
+        <v-tab to="/ubicacion">
           Ubicacion
           <v-icon>mdi-map</v-icon>
         </v-tab>

@@ -1,19 +1,14 @@
 <template>
   <v-app>
     <v-app-bar app color="#f2f2f2">
-      <v-btn icon>
-        <img class="mr-3" :src="require('@/assets/logo.png')" height="40px" color="transparent"/>
+      <v-btn icon to="/" class="pl-3 ml-3">
+        <img class="mr-3" :src="require('@/assets/logo.png')" height="35px" color="transparent"/>
       </v-btn>
-      <v-toolbar-title>Xio Store</v-toolbar-title>
+      <v-toolbar-title>Ring'OStore</v-toolbar-title>
       <v-spacer></v-spacer>
-       <v-btn icon>
+       <v-btn icon @click="snackbar = true">
         <v-icon>mdi-heart</v-icon>
       </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
       <v-menu
         left
         bottom
@@ -45,6 +40,23 @@
       <router-view></router-view>
       
     </v-main>
+    <v-snackbar
+      v-model="snackbar"
+      :timeout="timeout"
+    >
+      {{ text }}
+      <v-icon>mdi-heart</v-icon>
+      <template v-slot:action="{ attrs }">
+        <v-btn
+          color="blue"
+          text
+          v-bind="attrs"
+          @click="snackbar = false"
+        >
+          Close
+        </v-btn>
+      </template>
+    </v-snackbar>
   </v-app>
 </template>
 
@@ -68,7 +80,10 @@ export default {
       url:"https://instagram.com"},
       {name:"correo",
       url:"https://gmail.com"},
-    ]
+    ],
+    snackbar: false,
+      text: 'We like you too',
+      timeout: 2000,
   }),
 };
 </script>
