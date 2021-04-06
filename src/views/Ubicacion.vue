@@ -27,7 +27,7 @@
       </v-col>
     </v-row>
     <v-row>
-        <h1>Encuentranos en el mapa!</h1>
+        <h1 class="mx-6">Encuentranos en el mapa!</h1>
         <v-col>
             <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125710.51909882578!2d-69.43288923389996!3d10.061858985443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8766bc9c4998e1%3A0x9410c7a23558427f!2zMTDCsDAzJzEyLjYiTiA2OcKwMjInMDkuMiJX!5e0!3m2!1ses!2sve!4v1617206519860!5m2!1ses!2sve"

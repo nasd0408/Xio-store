@@ -18,14 +18,14 @@
           <h3>Precio: {{price}}$</h3>
           
           <h3>Pregunta acerca de este articulo en:</h3>
-          <v-btn color="#fe793d" dark>
-            WhatsApp
-            <v-icon>mdi-whatsapp</v-icon>
-          </v-btn>
-          <v-btn class="mx-3 my-4" color="#fb4c1f" dark>
-            Instagram
-            <v-icon>mdi-instagram</v-icon>
-          </v-btn>
+          <v-btn class="mx-3 my-3" color="#fe793d" dark href="https://wa.me/584145202186" target="__blank">
+              WhatsApp
+              <v-icon>mdi-whatsapp</v-icon>
+            </v-btn>
+            <v-btn class="mx-3 my-4" color="#fb4c1f" dark href="https://instagram.com" target="__blanck">
+              Instagram
+              <v-icon>mdi-instagram</v-icon>
+            </v-btn>
           <v-card-actions class="pa-4">
             <h5>Califica este producto</h5>
             <v-spacer></v-spacer>
@@ -41,7 +41,7 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row class="mx-1">
       <Form/>
     </v-row>
     <v-row>
