@@ -21,10 +21,16 @@ export default {
  h1 span{
      color: #fbc6d0;
      background: black;
+     border-radius: .6em;
  }
 h3{
     font-size: 2.5em;
     font-weight: 200;
     
+}
+@media(max-width: 768px){
+    h1 span{
+        font-size: 30px;
+    }
 }
 </style>
