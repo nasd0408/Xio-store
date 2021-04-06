@@ -15,23 +15,26 @@
             cols="12"
             md="6"
           >
-            <v-item v-slot="{ active, toggle }">
-              <v-img
-                :src="item.src"
-                height="150"
-                class="text-right pa-2"
-                @click="toggle"
-              >
-                <v-btn
-                  icon
-                  dark
+            <v-card rounded="lg" color="#f2f2f2" to="/detail/id">
+              <v-card-title>{{item.name}}</v-card-title>
+              <v-item v-slot="{ active, toggle }">
+                <v-img
+                  :src="item.src"
+                  height="150"
+                  class="text-right pa-2"
+                  @click="toggle"
                 >
-                  <v-icon>
-                    {{ active ? 'mdi-heart' : 'mdi-heart-outline' }}
-                  </v-icon>
-                </v-btn>
-              </v-img>
-            </v-item>
+                  <v-btn
+                    icon
+                    dark
+                  >
+                    <v-icon>
+                      {{ active ? 'mdi-heart' : 'mdi-heart-outline' }}
+                    </v-icon>
+                  </v-btn>
+                </v-img>
+              </v-item>
+            </v-card>
           </v-col>
         </v-row>
       </v-item-group>
@@ -46,27 +49,43 @@
       items:  [
           {
             src: require('@/assets/showcase1.jpg'),
+            name: "Collares gold 1",
+            price: 100,
           },
           {
             src: require('@/assets/showcase2.jpg'),
+            name:"Anillos gold 1",
+            price: 100
           },
           {
             src: require('@/assets/showcase3.jpg'),
+            name:"Gold collection 1",
+            price: 100
           },
           {
             src: require('@/assets/showcase4.jpg'),
+            name:"Pink collection 1",
+            price: 100
           },
           {
             src: require('@/assets/Anillo1.jpg'),
+            name:"Rose gold ring",
+            price: 100
           },
           {
             src: require('@/assets/Anillo2.jpg'),
+            name:"Crown gold ring",
+            price: 100
           },
           {
             src: require('@/assets/Anillo3.jpg'),
+            name:"Diamond gold ring",
+            price: 100
           },
           {
             src: require('@/assets/Anillo4.jpg'),
+            name:"Diamond multi ring",
+            price: 100
           },
         ],
       selected: [],

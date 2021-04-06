@@ -1,12 +1,13 @@
 <template>
-  <v-container>
-    <v-card>
+  <v-container >
+    <v-card rounded="lg">
       <v-tabs
         v-model="tab"
         background-color="#f2f2f2"
         centered
         color="#fb4c1f"
         icons-and-text
+        
       >
         <v-tabs-slider></v-tabs-slider>
 
@@ -26,7 +27,7 @@
         </v-tab>
       </v-tabs>
 
-      <v-tabs-items v-model="tab">
+      <v-tabs-items v-model="tab" rounded="lg">
         <v-tab-item
           v-for="i in 3"
           :key="i"
