@@ -79,7 +79,7 @@ export default {
       {name:"instagram",
       url:"https://instagram.com"},
       {name:"correo",
-      url:"https://gmail.com"},
+      url:"mailto:xjra1999@gmail.com"},
     ],
     snackbar: false,
       text: 'We like you too',

@@ -22,6 +22,7 @@
                 <v-text-field
                   label="Numero de telefono"
                   prepend-inner-icon="mdi-cellphone"
+                  append-icon="mdi-whatsapp"
                 ></v-text-field>
               </v-col>
             </v-row>
@@ -29,7 +30,7 @@
               <v-text-field
                 label="Direccion"
                 prepend-inner-icon="mdi-map-marker-outline"
-                append-icon="mdi-whatsapp"
+                
               ></v-text-field>
             </v-row>
             <v-row>
@@ -52,25 +53,29 @@
         </v-form>
       </v-card>
       <v-dialog v-model="dialog" max-width="500px">
-        <v-card rounded="xl">
-          <v-container>
-            <v-row justify="center">
+        <v-card rounded="xl" class="pa-3">
+          <v-container >
+            <v-row justify="center" style="text-align:center">
               <v-card-title>
                 Estas seguro de confirmar tu compra?
               </v-card-title>
+              <v-card-text>
+                Tu solicitud sera enviada, serás notificado mediante WhatsApp 
+              </v-card-text>
             </v-row>
-            <v-row>
-              <v-col align-self="start">
+            
+              
+        
+            <v-row justify="space-around" >
                 <v-btn
                   color="success"
                   @click="(snackbar = true), (dialog = false)"
                   >Confirmar</v-btn
                 >
-              </v-col>
 
-              <v-col align-self="end">
+             
                 <v-btn color="error" @click="dialog = false">Cancelar</v-btn>
-              </v-col>
+              
             </v-row>
           </v-container>
         </v-card>

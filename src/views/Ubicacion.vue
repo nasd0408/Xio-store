@@ -2,7 +2,7 @@
   <v-container>
     <v-row align-content="center" justify="center">
       <v-col sm="12" lg="6" >
-        <v-card class="px-6 py-6" color="#f2f2f2" rounded="xl" >
+        <v-card class="px-6 py-6" color="#f2f2f2" rounded="xl" height="100%" >
           <v-card-title>Tienda Principal</v-card-title>
           <v-card-text> Ubicada en barquisimeto </v-card-text>
           <p>Ubicanos en la urbanizacion pueblo nuevo, donde te esperamos con ansias, aqui tendras la posibilidad
