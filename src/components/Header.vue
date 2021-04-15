@@ -1,7 +1,7 @@
 <template>
-  <v-container class="mt-5"  tile >
-    <v-row >
-      <v-col sm="12" md="4" > 
+  <v-container class="mt-5"  >
+    <v-row justify="center" align-content="center">
+      <v-col  cols="12" md="3"> 
         <v-card rounded="xl" height="100%" color="#f2f2f2"  >
           <v-card-title>
             Bienvenido a Ring'OStore 
@@ -12,11 +12,11 @@
           <v-card-text>En Ring'o Store estamos comprometidos con nuetros clientes para ofrecer 
             un servicio de calidad consistente a lo largo de nuestra increible seleccion de accesorios
             Nuestra prioridad es ofrecer siempre el producto con mas calidad y belleza en el mercado
-            
+           
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col sm="12" md="4">
+      <v-col xs="12">
         <v-card rounded="xl" color="#f2f2f2">
           <v-card-title>
             Contactos
@@ -36,7 +36,7 @@
             </v-btn>
         </v-card>
       </v-col>
-      <v-col sm="12" md="4">
+      <v-col sm="12" md="4" xs="12">
         
         <v-carousel height="250" style="width:400px" >
           <v-carousel-item

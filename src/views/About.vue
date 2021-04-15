@@ -49,7 +49,6 @@ export default {
 <style >
 .cat-text{
   font-size: 24px;
-  width: 45ch;
   color: rgb(54, 54, 54);
 }
 </style>
