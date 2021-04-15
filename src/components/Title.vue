@@ -29,8 +29,11 @@ h3{
     
 }
 @media(max-width: 768px){
-    h1 span{
-        font-size: 30px;
+    h1 {
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
     }
 }
 </style>

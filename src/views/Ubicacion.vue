@@ -44,4 +44,9 @@ export default {};
 </script>
 
 <style>
+  @media(max-width: 768px){
+    iframe{
+      width: 400px;
+    }
+  }
 </style>
