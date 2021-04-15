@@ -1,8 +1,9 @@
 <template>
   <v-container>
-    <showcase />
+    
     <v-container class="mx-auto">
       <h1>Catalogo</h1>
+      <p class="cat-text">Aprovecha las ofertas de nuestra nueva coleccion unicamente disponible hasta que se agote la existencia</p>
       <v-container class="pa-1">
         <v-item-group>
           <v-row>
@@ -21,6 +22,7 @@
         </v-item-group>
       </v-container>
     </v-container>
+    <showcase />
   </v-container>
 </template>
 
@@ -44,5 +46,10 @@ export default {
 };
 </script>
 
-<style>
+<style >
+.cat-text{
+  font-size: 24px;
+  width: 45ch;
+  color: rgb(54, 54, 54);
+}
 </style>

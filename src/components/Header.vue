@@ -1,20 +1,22 @@
 <template>
   <v-container class="mt-5"  tile >
     <v-row >
-      <v-col cols="12" sm="4">
-        <v-card rounded="xl" height="250px" color="#f2f2f2" >
+      <v-col sm="12" md="4" > 
+        <v-card rounded="xl" height="100%" color="#f2f2f2"  >
           <v-card-title>
             Bienvenido a Ring'OStore 
           </v-card-title>
           <v-card-subtitle>
             La tienda malinda
           </v-card-subtitle>
-          <v-card-text>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Facere voluptatibus iste doloremque asperiores modi molestiae maiores, 
-            deleniti et error necessitatibus.</v-card-text>
+          <v-card-text>En Ring'o Store estamos comprometidos con nuetros clientes para ofrecer 
+            un servicio de calidad consistente a lo largo de nuestra increible seleccion de accesorios
+            Nuestra prioridad es ofrecer siempre el producto con mas calidad y belleza en el mercado
+            
+          </v-card-text>
         </v-card>
       </v-col>
-      <v-col>
+      <v-col sm="12" md="4">
         <v-card rounded="xl" color="#f2f2f2">
           <v-card-title>
             Contactos
@@ -22,9 +24,8 @@
           <v-card-subtitle>
             Escribenos sin compromiso
           </v-card-subtitle>
-          <v-card-text>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Facere voluptatibus iste doloremque asperiores modi molestiae maiores, 
-            deleniti et error necessitatibus.</v-card-text>
+          <v-card-text>El cliente es nuestra prioridad, en Ring'o Store queremos establecer una relacion 
+            con nuestros clientes, para mantenerte al tanto de nuevos productos en el catalogo y ofertas que no te puedes perder.</v-card-text>
             <v-btn class="mx-3 my-3" color="#fe793d" dark href="https://wa.me/584145202186" target="__blank">
               WhatsApp
               <v-icon>mdi-whatsapp</v-icon>
@@ -35,7 +36,7 @@
             </v-btn>
         </v-card>
       </v-col>
-      <v-col>
+      <v-col sm="12" md="4">
         
         <v-carousel height="250" style="width:400px" >
           <v-carousel-item
