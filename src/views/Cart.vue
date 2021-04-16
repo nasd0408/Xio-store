@@ -33,16 +33,15 @@
         </v-item-group>
          
       </v-container>
-      <v-btn color="success" class="ma-5">Enviar pedido 
-          <v-icon>mdi-check</v-icon>
-      </v-btn>
+        <Form></Form>
   </v-container>
 </template>
 
 <script>
 import Producto from '../components/Producto.vue'
+import Form from '../components/form.vue'
 export default {
-  components: { Producto },
+  components: { Producto, Form },
 name:"cart",
 
 data(){

@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h1>Has tu pedido</h1>
+    <h1>Completa tu pedido</h1>
     <v-row>
       <v-card class="py-3 px-6 my-6" rounded="xl" color="#f2f2f2">
         <v-form>
