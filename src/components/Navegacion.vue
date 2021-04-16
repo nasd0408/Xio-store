@@ -1,11 +1,10 @@
 <template>
-  <v-container  >
-    <v-row justify="center" class="ma-2 pa-2" style="width:100%">
-      <v-card rounded="lg" elevation="4">
-        
+  <v-container >
+    <v-card rounded="lg">
       <v-tabs
         v-model="tab"
         background-color="#f2f2f2"
+        centered
         color="#fb4c1f"
         icons-and-text
         
@@ -32,8 +31,6 @@
         </v-tab>
       </v-tabs>
     </v-card>
-    </v-row>
-    
   </v-container>
 </template>
 
