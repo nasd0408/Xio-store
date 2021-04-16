@@ -26,7 +26,7 @@
         <v-list  class="px-5">
           <v-list-item
             v-for="link in links"
-            :key="link"
+            :key="link.id"
             @click="() => {}"
           >
             <v-btn text :href="link.url" target="_blank">
@@ -48,7 +48,7 @@
       <v-icon>mdi-heart</v-icon>
       <template v-slot:action="{ attrs }">
         <v-btn
-          color="blue"
+          color="#fb4c1f"
           text
           v-bind="attrs"
           @click="snackbar = false"
@@ -74,11 +74,14 @@ export default {
   data: () => ({
     //
     links:[
-      {name:"whatsapp",
+      { id:1,
+        name:"whatsapp",
       url:"https://wa.me/584145202186"},
-      {name:"instagram",
+      {id:2,
+        name:"instagram",
       url:"https://instagram.com"},
-      {name:"correo",
+      {id:3,
+        name:"correo",
       url:"mailto:xjra1999@gmail.com"},
     ],
     snackbar: false,

@@ -25,6 +25,10 @@
           Ubicacion
           <v-icon>mdi-map</v-icon>
         </v-tab>
+        <v-tab to="/cart">
+          Carrito 
+          <v-icon>mdi-cart-outline</v-icon>
+        </v-tab>
       </v-tabs>
 
       <v-tabs-items v-model="tab" rounded="lg">
@@ -46,6 +50,8 @@ export default {
     data () {
       return {
         toggle_exclusive: undefined,
+        tab:[],
+        
       }
     }
 }

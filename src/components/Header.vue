@@ -1,7 +1,7 @@
 <template>
   <v-container class="mt-5"  >
     <v-row justify="center" align-content="center">
-      <v-col  cols="12" md="3"> 
+      <v-col  cols="12" md="4"> 
         <v-card rounded="xl" height="100%" color="#f2f2f2"  >
           <v-card-title>
             Bienvenido a Ring'OStore 

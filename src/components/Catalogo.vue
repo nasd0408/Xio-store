@@ -16,22 +16,14 @@
             md="6"
           >
             <v-card rounded="lg" color="#f2f2f2" to="/detail/id">
-              <v-card-title>{{item.name}}</v-card-title>
-              <v-item v-slot="{ active, toggle }">
+              <v-card-title style="background-color:red;">{{im.name}}</v-card-title>
+              <v-item >
                 <v-img
                   :src="item.src"
                   height="150"
-                  class="text-right pa-2"
-                  @click="toggle"
+                  class=" "
+                  
                 >
-                  <v-btn
-                    icon
-                    dark
-                  >
-                    <v-icon>
-                      {{ active ? 'mdi-heart' : 'mdi-heart-outline' }}
-                    </v-icon>
-                  </v-btn>
                 </v-img>
               </v-item>
             </v-card>
@@ -46,48 +38,7 @@
   export default {
     name:"Catalogo",
     data: () => ({
-      items:  [
-          {
-            src: require('@/assets/showcase1.jpg'),
-            name: "Collares gold 1",
-            price: 100,
-          },
-          {
-            src: require('@/assets/showcase2.jpg'),
-            name:"Anillos gold 1",
-            price: 100
-          },
-          {
-            src: require('@/assets/showcase3.jpg'),
-            name:"Gold collection 1",
-            price: 100
-          },
-          {
-            src: require('@/assets/showcase4.jpg'),
-            name:"Pink collection 1",
-            price: 100
-          },
-          {
-            src: require('@/assets/Anillo1.jpg'),
-            name:"Rose gold ring",
-            price: 100
-          },
-          {
-            src: require('@/assets/Anillo2.jpg'),
-            name:"Crown gold ring",
-            price: 100
-          },
-          {
-            src: require('@/assets/Anillo3.jpg'),
-            name:"Diamond gold ring",
-            price: 100
-          },
-          {
-            src: require('@/assets/Anillo4.jpg'),
-            name:"Diamond multi ring",
-            price: 100
-          },
-        ],
+      items: this.$store.getters.getItems,
       selected: [],
     }),
   }

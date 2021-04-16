@@ -1,7 +1,7 @@
 <template>
   <v-container>
     
-    <v-container class="mx-auto">
+    <v-container class="mx-auto" >
       <h1>Catalogo</h1>
       <p class="cat-text">Aprovecha las ofertas de nuestra nueva coleccion unicamente disponible hasta que se agote la existencia</p>
       <v-container class="pa-1">

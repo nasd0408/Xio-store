@@ -8,7 +8,7 @@
           class="text-right pa-2"
         >
           <v-card color="transparent" flat >
-            <v-card-title style="font-size:30px">{{producto.name}}</v-card-title>
+            <v-card-title style="font-size:30px; background:rgb(255,255,255,0.5); " >{{producto.cantidad}} {{producto.name}}</v-card-title>
           </v-card>
         </v-img>
       </v-item>

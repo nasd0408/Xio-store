@@ -55,17 +55,46 @@ export default new Vuex.Store({
         id: 8,
       },
     ],
+    cart:[],
+    cartItemCount:0,
   },
   mutations: {
+    addToCart(state,payload){
+      let item = payload;
+      item ={ ...item, cantidad: 1}
+      if (state.cart.length > 0){
+        let bool = state.cart.some(i => i.id === item.id)
+        if(bool){
+          let itemIndex = state.cart.findIndex(el => el.id === item.id)
+          state.cart[itemIndex]["cantidad"] += 1;
+        } else{
+          state.cart.push(item)
+        }
+      }else{
+        state.cart.push(item)
+      }
+      state.cartItemCount++
+    },
   },
   actions: {
+      addToCart:(context,payload) => {
+        context.commit("addToCart", payload)
+      
+    }
   },
   modules: {
   },
   getters:{
     getById: state => id => {
       return state.Productos.find(producto=> producto.id === id)
-    }
+    },
+
+   getCart:state =>{
+     return state.cart
+   },
+   getItems: state =>{
+     return state.Productos
+   }
     
   }
 })

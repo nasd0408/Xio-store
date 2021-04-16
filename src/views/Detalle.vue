@@ -2,30 +2,24 @@
   <v-container>
     <v-row>
       <v-col>
-       <v-img :src="src" contain width="500px" class="rounded-xl">
+       <v-img :src="detalles.src" contain width="500px" class="rounded-xl">
 
        </v-img>
       </v-col>
 
       <v-col>
         <v-card class="py-4 px-4" elevation="3" color="#f2f2f2" rounded="xl">
-          <h1>{{ name }}</h1>
+          <h1>{{ detalles.name }}</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
             necessitatibus, culpa odit ratione fugiat modi porro quaerat sit
             omnis praesentium!
           </p>
-          <h3>Precio: {{price}}$</h3>
-          
-          <h3>Pregunta acerca de este articulo en:</h3>
-          <v-btn class="mx-3 my-3" color="#fe793d" dark href="https://wa.me/584145202186" target="__blank">
-              WhatsApp
-              <v-icon>mdi-whatsapp</v-icon>
-            </v-btn>
-            <v-btn class="mx-3 my-4" color="#fb4c1f" dark href="https://instagram.com" target="__blanck">
-              Instagram
-              <v-icon>mdi-instagram</v-icon>
-            </v-btn>
+          <h3>Precio: {{detalles.price}}$</h3>
+            <v-btn v-on:click="addToCart" color="#fb4c1f" dark class="mt-4" @click="(snackbar=true)">
+              Añade al carrito 
+              <v-icon class="ml-3">mdi-cart-plus</v-icon>
+              </v-btn>
           <v-card-actions class="pa-4">
             <h5>Califica este producto</h5>
             <v-spacer></v-spacer>
@@ -42,25 +36,45 @@
       </v-col>
     </v-row>
     <v-row class="mx-1">
-      <Form/>
+  
     </v-row>
     <v-row>
       <showcase />
     </v-row>
+
+        <v-snackbar v-model="snackbar">
+      {{ detalles.name }} añadido al carrito
+
+      <template v-slot:action="{ attrs }">
+        <v-btn color="#fb4c1f" text v-bind="attrs" @click="snackbar = false">
+          Close
+        </v-btn>
+      </template>
+    </v-snackbar>
   </v-container>
+  
 </template>
 
 <script>
-import Form from '../components/form.vue';
+
 import Showcase from "../components/Showcase.vue";
 export default {
-  components: { Showcase,Form },
+  components: { Showcase, },
   
     data() {
-    return this.$store.getters.getById(this.id);
+    return{
+      detalles: this.$store.getters.getById(this.id),
+      rating:0,
+      snackbar: false,
+    } 
   },
   props: {
     id: Number,
+  },
+  methods:{
+    addToCart(){
+     this.$store.dispatch("addToCart",this.detalles)
+    }
   },
 };
 </script>
