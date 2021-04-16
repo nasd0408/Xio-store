@@ -3,13 +3,13 @@
       <v-row class="mb-4">
           <h1>Tu carrito de compras</h1>
       </v-row>
-       <v-container class="pa-1 ma-4">
+       <v-container>
         <v-item-group>
           <v-row>
             <v-col v-for="(producto, i) in Productos" :key="i" cols="12" md="4"
             >
               <!--Producto -->
-              <v-card class="ma-2" flat color="rgb(255,255,255,0.5)" :to="{name:'detalle', params:{ id : producto.id } }">
+              <v-card  flat color="rgb(255,255,255,0.5)" :to="{name:'detalle', params:{ id : producto.id } }">
                 <producto
                   :key="producto.id"
                   :producto="producto" 
