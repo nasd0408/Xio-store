@@ -1,10 +1,11 @@
 <template>
-  <v-container >
-    <v-card rounded="lg">
+  <v-container  >
+    <v-row justify="center" class="ma-2 pa-2" style="width:100%">
+      <v-card rounded="lg" elevation="4">
+        
       <v-tabs
         v-model="tab"
         background-color="#f2f2f2"
-        centered
         color="#fb4c1f"
         icons-and-text
         
@@ -30,17 +31,9 @@
           <v-icon>mdi-cart-outline</v-icon>
         </v-tab>
       </v-tabs>
-
-      <v-tabs-items v-model="tab" rounded="lg">
-        <v-tab-item
-          v-for="i in 3"
-          :key="i"
-          :value="'tab-' + i"
-        >
-      
-        </v-tab-item>
-      </v-tabs-items>
     </v-card>
+    </v-row>
+    
   </v-container>
 </template>
 
@@ -49,9 +42,6 @@ export default {
     name:"Navegacion",
     data () {
       return {
-        toggle_exclusive: undefined,
-        tab:[],
-        
       }
     }
 }
